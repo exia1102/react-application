@@ -26,6 +26,9 @@ class TodoItem extends Component {
         const { handleDelete, index }=this.props;
         handleDelete(index);
     }
+    componentWillReceiveProps(){
+        console.log("hello");
+    }
 }
 
 TodoItem.propTypes={
